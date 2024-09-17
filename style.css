@@ -1,0 +1,52 @@
+h1 {
+    color: limegreen;
+    font-family: "Sofadi One", system-ui;
+}
+
+.container {
+    background-color: orange;
+    min-height: 500px;
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.col {
+    /* background-color: red !important; */
+    min-height: 200px;
+    width: 30%;
+    margin-bottom: 40px;
+}
+
+.hide-desktop-only {
+    display: none;
+}
+
+.col img {
+    width: 100%;
+    height: 200px;
+}
+
+/* tablet view */
+@media (max-width: 768px) {
+    h1 {
+        color: red;
+    }
+
+    .col {
+        width: 45%;
+    }
+}
+
+/* mobile view */
+@media (max-width: 500px) {
+    h1 {
+        color: blue;
+        font-family: "Times New Roman", Times, serif;
+    }
+
+    .col {
+        width: 100%;
+    }
